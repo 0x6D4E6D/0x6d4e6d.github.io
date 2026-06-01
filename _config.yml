@@ -14,7 +14,7 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 0x6D4E6D # the main title
+title: "0x6D4E6D" # the main title
 
 tagline: CTF writeups # it will display as the subtitle
 
@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://0x6D4E6D.github.io"
 
 github:
-  username: 0x6D4E6D # change to your GitHub username
+  username: "0x6D4E6D" # change to your GitHub username
 
 #twitter:
   #username: twitter_username # change to your Twitter username
@@ -34,7 +34,7 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: 0x6D4E6D
+  name: "0x6D4E6D"
   #email: example@domain.com # change to your email address
   fediverse_handle: # fill in your fediverse handle. E.g. "@username@domain.com"
   links:
@@ -89,7 +89,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: # [light | dark]
+theme_mode: dark
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
