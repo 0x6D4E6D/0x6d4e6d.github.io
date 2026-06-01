@@ -34,9 +34,6 @@ order: 4
   text-decoration: none !important;
 }
 </style>
-
-# Buy Me a Coffee
-
 If my CTF writeups helped you, saved you time, or gave you useful notes, you can support my work here:
 
 <a class="kofi-btn" href="https://ko-fi.com/0x6d4e6d" target="_blank" rel="noopener noreferrer">
