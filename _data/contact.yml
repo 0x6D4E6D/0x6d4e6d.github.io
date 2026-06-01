@@ -1,5 +1,8 @@
 #  The contact options.
-
+- type: ko-fi
+  icon: "fas fa-mug-hot"
+  url: "https://ko-fi.com/0x6d4e6d"
+  
 - type: github
   icon: "fab fa-github"
 
