@@ -1,6 +1,6 @@
 ---
 title: "TryHackMe: Cache Me Outside"
-author: 0x6D4E6D
+author: '0x6D4E6D'
 categories: [TryHackMe]
 tags: [osint, github, komoot]
 render_with_liquid: false
