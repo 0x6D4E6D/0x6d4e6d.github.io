@@ -1,6 +1,6 @@
 ---
 title: "TryHackMe: Cache Me Outside"
-author: "0x6D4E6D"
+author: 0x6D4E6D
 categories: [TryHackMe]
 tags: [osint, github, komoot]
 render_with_liquid: false
@@ -11,7 +11,6 @@ image:
 ## Overview
 
 In this room, the goal was to investigate a retired hacker by following small pieces of public information left across the internet.
-
 The investigation started from a leaked conversation screenshot and continued through public profiles, GitHub metadata, and social media clues.
 
-Room Link: https://tryhackme.com/room/cachemeoutside
+Room Link: [Cache Me Outside](https://tryhackme.com/room/cachemeoutside)
