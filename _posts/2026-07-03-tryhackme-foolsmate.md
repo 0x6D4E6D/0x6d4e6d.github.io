@@ -17,7 +17,7 @@ Room Link: [Fools Mate](https://tryhackme.com/room/foolsmate)
 
 The target web application was available at:
 
-```
+```text
 http://10.114.157.19/
 ```
 
@@ -31,7 +31,7 @@ The position was a simple rook endgame puzzle. White had a rook on `a1`, and the
 
 The intended winning move was:
 
-```
+```text
 from: a1
 to: a8
 ```
@@ -44,7 +44,7 @@ I tried to play the checkmate move through the web interface.
 
 Instead of allowing the move, the application displayed a fake system-style error message:
 
-```
+```text
 I'll shut down your PC if you play that.
 ```
 
@@ -60,13 +60,13 @@ At this point, the important question was whether the check was enforced by the 
 
 I inspected the page source and JavaScript files. The main frontend logic was loaded from:
 
-```
+```text
 /js/app.js
 ```
 
 Inside `app.js`, I found the following function:
 
-```
+```json
 function preMoveCheck(from, to, promotion) {
   const probe = new Chess(game.fen());
   let result;
@@ -97,13 +97,13 @@ Client-side code can be inspected, modified, or bypassed. If the backend endpoin
 
 Continuing through the JavaScript file, I found that moves were submitted to the backend using a `fetch()` request to:
 
-```
+```text
 POST /api/move
 ```
 
 The request body used JSON with `from` and `to` fields:
 
-```
+```json
 {
   "from": "a1",
   "to": "a8"
@@ -133,7 +133,7 @@ Instead of using the board UI, I sent the move directly to the backend with `cur
 
 The important part is the JSON body:
 
-```
+```json
 {
   "from": "a1",
   "to": "a8"
@@ -142,7 +142,7 @@ The important part is the JSON body:
 
 Example command:
 
-```
+```bash
 curl -X POST http://10.114.157.19/api/move \
   -H "Content-Type: application/json" \
   -H "Cookie: sid=<your_sid_cookie>" \
@@ -151,7 +151,7 @@ curl -X POST http://10.114.157.19/api/move \
 
 The server accepted the checkmate move and returned the flag:
 
-```
+```json
 {
   "ok": true,
   "move": "a6a8",
