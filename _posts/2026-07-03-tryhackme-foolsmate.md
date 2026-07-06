@@ -25,7 +25,7 @@ I started with basic enumeration. A quick Nmap scan did not reveal anything usef
 
 When opening the page in the browser, the application displayed a chess board game.
 
-![Landing page showing the Endgame Trainer chess board](screenshots/01-landing-page.png)
+![Landing page showing the Endgame Trainer chess board](01-landing-page.png)
 
 The position was a simple rook endgame puzzle. White had a rook on `a1`, and the black king was trapped on `g8` by its own pawns.
 
@@ -48,7 +48,7 @@ Instead of allowing the move, the application displayed a fake system-style erro
 I'll shut down your PC if you play that.
 ```
 
-![Client-side warning shown after attempting checkmate](screenshots/02-client-side-warning.png)
+![Client-side warning shown after attempting checkmate](02-client-side-warning.png)
 
 This showed that the application was intentionally blocking the checkmate move from the UI.
 
@@ -124,7 +124,7 @@ The application used a session cookie named `sid`.
 
 I opened the browser developer tools and checked the stored cookies for the target host.
 
-![Session cookie in browser storage](screenshots/03-session-cookie.png)
+![Session cookie in browser storage](03-session-cookie.png)
 
 
 ## Exploitation
