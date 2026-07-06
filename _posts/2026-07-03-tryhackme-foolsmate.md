@@ -66,7 +66,7 @@ I inspected the page source and JavaScript files. The main frontend logic was lo
 
 Inside `app.js`, I found the following function:
 
-```json
+```js
 function preMoveCheck(from, to, promotion) {
   const probe = new Chess(game.fen());
   let result;
